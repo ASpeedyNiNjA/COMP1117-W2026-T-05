@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerStats
 {
     // Private fields
-    private float moveSpeed;
+    protected float moveSpeed;
     private int maxHealth;
     private int currentHealth;
 
