@@ -16,7 +16,7 @@ public class EliteEnemy : Enemy
     // Update is called once per frame
     void Update()
     {
-        superSprite.color = Color.blue;
+        superSprite.color = Color.yellow;
         transform.localScale = new Vector3(2,2,2);
         
         
