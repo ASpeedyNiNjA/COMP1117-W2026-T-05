@@ -111,4 +111,10 @@ public class Player : Character
        // Trigger death UI
        // Initate Level Reset Logic
     }
+
+    public void Gravity()
+    {
+        Debug.Log("Shouldn't you be on the roof right now");
+        rBody.gravityScale = -2;
+    }
 }
