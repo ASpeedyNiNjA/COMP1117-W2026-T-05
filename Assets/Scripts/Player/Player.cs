@@ -124,9 +124,11 @@ public class Player : Character
     {
         Debug.Log("Shouldn't you be on the roof right now");
         rBody.gravityScale = -2;
+        this.transform.rotation = Quaternion.Euler(0f, 0f, -180f);
     }
     public void Normal()
     {
         rBody.gravityScale = 5;
+        this.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 }
