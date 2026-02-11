@@ -15,6 +15,7 @@ public class Player : Character
     private Rigidbody2D rBody;          // Used to apply a force to move or jump
     private PlayerInputHandler input;   // Reads the input
     private bool isGrounded;            // Holds the result of the ground check operation
+    private bool GravityBool = true;
     private float currentSpeedModifier = 1f;
 
     /*
@@ -60,7 +61,14 @@ public class Player : Character
         // Handle jumping
         HandleJump();
         // Optional: Handle mario-like falling
+
+        if (GravityBool == true)
+        {
+
+        }
     }
+
+
 
     private void HandleMovement()
     {
@@ -116,5 +124,9 @@ public class Player : Character
     {
         Debug.Log("Shouldn't you be on the roof right now");
         rBody.gravityScale = -2;
+    }
+    public void Normal()
+    {
+        rBody.gravityScale = 5;
     }
 }
